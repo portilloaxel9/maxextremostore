@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- Script -->
+    <script src="js/search.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css" type="text/css">
+    <title>Maxextremostore</title>
+</head>
+<body>
+    <header>
+        <img class="logo" src="./img/maxextremobikes-logo.png" alt="">
+        <div class="menu-header">
+           <a href="">Bicicletas</a>
+           <a href="">Accesorios</a>
+           <a href="">Componentes</a>
+           <a href="">Indumentaria</a>
+           <a href="">Contacto</a> 
+        </div>
+        <nav class="navbar">
+          <form class="buscador" role="search" onsubmit="buscarProductos(event)">
+            <input class="search" type="search" id="searchInput" placeholder="Search" aria-label="Search">
+            <button class="btn" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+          </form>
+        </nav> 
+    </header>
+    <main id="productos">
+      <p id="resultadosTitulo" class="title" style="display: none;">Resultados</p>
+      <p id="mensajeSinResultados" style="display: none;">No hay resultados.</p>
+      <p class="title">Cascos</p>
+      <section class="section1">
+        <div class="card" style="width: 18rem;">
+          <img src="./img/producto1.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Casco Aero con Lente Magnético</h5>
+            <p class="card-text">Precio: $111,600</p>
+            <a href="https://www.mercadolibre.com.ar/" class="btn"><img class="ml-logo" src="./img/mercado-libre-logo.webp" alt="Mercado Libre"></a>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+          <img src="./img/producto2.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Casco aerodinámico ciclista con regulador</h5>
+            <p class="card-text">Precio: $97,500</p>
+            <a href="https://www.mercadolibre.com.ar/" class="btn"><img class="ml-logo" src="./img/mercado-libre-logo.webp" alt="Mercado Libre"></a>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+          <img src="./img/producto3.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Casco de Ciclismo Aero Bitec</h5>
+            <p class="card-text">Precio: $153,600</p>
+            <a href="https://www.mercadolibre.com.ar/" class="btn"><img class="ml-logo" src="./img/mercado-libre-logo.webp" alt="Mercado Libre"></a>
+          </div>
+        </div>
+      </section>
+      <p class="title">Anteojos</p>
+      <section class="section2">
+        <div class="card" style="width: 18rem;">
+          <img src="./img/producto4.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Lentes 3M Virtua Block</h5>
+            <p class="card-text">Precio: $32,900</p>
+            <a href="https://www.mercadolibre.com.ar/" class="btn"><img class="ml-logo" src="./img/mercado-libre-logo.webp" alt="Mercado Libre"></a>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+          <img src="./img/producto5.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Lentes 3M Virtua CCS Traslucido</h5>
+            <p class="card-text">Precio: $56,500</p>
+            <a href="https://www.mercadolibre.com.ar/" class="btn"><img class="ml-logo" src="./img/mercado-libre-logo.webp" alt="Mercado Libre"></a>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+          <img src="./img/producto6.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Lentes 3M i86 HC Ambar</h5>
+            <p class="card-text">Precio: $48,200</p>
+            <a href="https://www.mercadolibre.com.ar/" class="btn"><img class="ml-logo" src="./img/mercado-libre-logo.webp" alt="Mercado Libre"></a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="menu-footer">
+        <a href="">Bicicletas</a>
+        <a href="">Accesorios</a>
+        <a href="">Componentes</a>
+        <a href="">Indumentaria</a>
+      </div>
+      <div class="contactanos">
+        <p class="title">Contactanos</p>
+        <p><i class="fa-solid fa-phone"></i> 011 23895634</p>
+        <p><i class="fa-solid fa-envelope"></i> maxextremostore@gmail.com</p>
+        <p><i class="fa-solid fa-location-dot"></i> Av. Libertador 1947, Recoleta</p>
+      </div>
+      <div class="redes">
+        <p class="title">Seguinos</p>
+        <p><i class="fa-brands fa-instagram"></i> Instagram / @maxextremostore</p>
+        <p><i class="fa-brands fa-facebook"></i> Facebook / Maxextremo Store</p>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+</body>
+</html>
